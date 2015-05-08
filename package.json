@@ -1,0 +1,25 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdavis27/photo-album-api.git"
+  },
+  "author": "Candice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdavis27/photo-album-api/issues"
+  },
+  "homepage": "https://github.com/cdavis27/photo-album-api",
+  "dependencies": {
+    "exif": "^0.4.0",
+    "express": "^4.12.3",
+    "mongoose": "^4.0.2",
+    "multer": "^0.1.8"
+  }
+}

@@ -1,16 +1,19 @@
 var express 	= require('express');
 var router 		= express.Router();
-var models 		= require('./models.js');
+
+// Model imports
+var Picture 	= require('./models/Picture');
+var Day 	 	= require('./models/Day');
 
 // read
 router.get('/days', function (req, res) {
-	models.Day.find({}, function (err, data) {
+	Day.find({}, function (err, data) {
 		res.json(data);
 	})
 });
 
 router.get('/days/:id', function (req, res) {
-	models.Day.findOne({_id: req.params.id}, function (err, data) {
+	Day.findOne({_id: req.params.id}, function (err, data) {
 		if (!data) {
 			res.send('id not found');
 			return;
@@ -25,7 +28,7 @@ router.post('/days', function (req, res) {
 		req.imgInfo.then(function(imgInfo) {
 
 			console.log("imgInfo:", imgInfo);
-			var day = new models.Day({
+			var day = new Day({
 				'headerImgPath': imgInfo.file.path,
 				'title': req.body.title,
 				'description': req.body.description,
@@ -56,7 +59,7 @@ router.post('/days', function (req, res) {
 
 // update
 router.put('/days', function (req, res) {
-	models.Day.findOne({_id: req.body._id}, function (err, data) {
+	Day.findOne({_id: req.body._id}, function (err, data) {
 		if (!data) {
 			res.send('id not found');
 			return;
@@ -76,7 +79,7 @@ router.put('/days', function (req, res) {
 
 // delete
 router.delete('/days/:id', function (req, res) {
-	models.Day.findOne({_id: req.params.id}, function (err, data) {
+	Day.findOne({_id: req.params.id}, function (err, data) {
 		if (!data) {
 			res.send('id not found');
 			return;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Album Admin</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.4-dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<form id="uploadForm" enctype="multipart/form-data" action="http://localhost:5000/days" method="post">
+			<div class="form-group">
+				<label for="title">Day Title</label>
+				<input type="text" class="form-control" id="title" name="title">
+			</div>
+			<div class="form-group">
+				<label for="description">Day Description</label>
+				<input type="text" class="form-control" id="description" name="description">
+			</div>
+			<div class="form-group">
+				<label for="city">City</label>
+				<input type="text" class="form-control" id="city" name="location_city">
+			</div>
+			<div class="form-group">
+				<label for="country">Country</label>
+				<input type="text" class="form-control" id="country" name="location_country">
+			</div>
+			<div class="form-group">
+				<label for="temperature">Temperature</label>
+				<input type="text" class="form-control" id="temperature" name="weather_temperature">
+			</div>
+			<div class="form-group">
+				<label for="weather-description">Description</label>
+				<input type="text" class="form-control" id="weather-description" name="weather_description">
+			</div>
+			<div class="form-group">
+				<label for="header-img">Header Picture</label>
+				<input type="file" id="header-img" name="headerImgPath">
+			</div>
+			<div class="form-group">
+				<label for="images-img">Images</label>
+				<input type="file" id="images-img" name="imagesPath" multiple>
+			</div>
+			<input type="submit" class="btn btn-default" value="Create Day" name="submit">
+		</form>
+	</div>
+</body>
+</html>

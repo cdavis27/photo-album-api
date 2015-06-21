@@ -1,0 +1,70 @@
+/* common.css */
+
+body {
+	font-family: 'Helvetica', sans-serif;
+	background-color: #fefefe;
+}
+
+
+div.header {
+	background-color: black;
+}
+
+
+div.header h1 {
+	font-size: 6em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 0;
+	line-height: 70px;
+	color: rgba(255, 255, 255, .6);
+}
+
+div.header h2 {
+	font-size: 2em;
+	position: relative;
+	color: rgba(255, 255, 255, .6);
+}
+
+div.header h2:before,
+div.header h2:after {
+	content: "";
+	position: absolute;
+	height: 43px;
+	border-bottom: 5px solid rgba(255, 255, 255, .6);
+	top: 0;
+	width: 35%;
+}
+
+div.header h2:before {
+	right: 53%;
+	margin-right: 50px;
+}
+
+div.header h2:after {
+	left: 53%;
+	margin-left: 50px;
+}
+
+
+
+
+div.footer {
+	height: 100px;
+	background-color: black;
+}
+
+div.footer .container {
+	height: 100%;
+	position: relative;
+}
+
+div.footer .author {
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed';
+	bottom: 5px;
+	right: 0;
+	position: absolute;
+}

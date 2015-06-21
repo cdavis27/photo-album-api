@@ -1,0 +1,36 @@
+/* album.css */
+
+div.collage-content {
+	margin-top: 20px;
+	float: right;
+}
+
+div.collage-content img {
+	display: none;
+	opacity: 0;
+	margin-bottom: 15px !important;
+}
+
+div.hide-me {
+	opacity: 0;
+}
+
+div.side-bar {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	/*/* fix this **/
+	height: 800px;
+	color: white;
+	position:fixed;
+}
+
+div.album-container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+div.day-info {
+	padding: 7%;
+}

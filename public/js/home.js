@@ -28,7 +28,7 @@ var albumImages = [
 ];
 // Can you make this more effecient/dynamic?
 
-var ROOT_ALBUM_DIR = 'http://localhost:5000';
+var ROOT_ALBUM_DIR = '/';
 
 $(document).ready(function() {
     var $albumRow = $('#albumRow');
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     // Use AJAX to get days from the API
     $.ajax({
-        url: 'http://localhost:5000/days',
+        url: '/api/days',
         success: function(result) {
             for(var i=0; i<result.length; i++) {
                 var day = {};

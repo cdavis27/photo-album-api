@@ -1,0 +1,22 @@
+extends layout
+
+block body
+  div.container-fluid.header.header-image
+    h2.text-center April - May
+    h1.text-center #Wanderlust2015
+
+  div.container-fluid.main-content
+    div.black-top
+    div.container.albums
+      div.row.text-center(id='albumRow')
+
+  div.container-fluid.footer
+    div.container
+      span.author Candice Davis
+
+  script(src='lib/jquery/jquery-2.1.4.js')
+  script(src='lib/ui-bootstrap-tpls-0.13.0.min.js')
+
+  script(src='js/home.js')
+  script(src='js/AlbumFactory.js')
+

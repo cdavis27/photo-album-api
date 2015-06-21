@@ -28,7 +28,7 @@ var albumImages = [
 ];
 // Can you make this more effecient/dynamic?
 
-var ROOT_ALBUM_DIR = '/';
+var ROOT_ALBUM_DIR = '';
 
 $(document).ready(function() {
     var $albumRow = $('#albumRow');
@@ -45,6 +45,7 @@ $(document).ready(function() {
                 day.path = result[i].headerImgPath;
                 day.url = '';
                 albumImages.push(day);
+                console.log(day);
             }
 
             albums.loadImages(albumImages);

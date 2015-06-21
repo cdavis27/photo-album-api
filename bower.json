@@ -1,0 +1,28 @@
+{
+  "name": "photo-journal-app",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cdavis27/photo-journal-app",
+  "authors": [
+    "Candice Davis <candicedavis222@gmail.com>",
+    "Parker Lusk <parkerclusk@gmail.com>"
+  ],
+  "description": "An app to group photos in journal form.",
+  "main": "app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "bootstrap": "~3.3.5",
+    "jquery-collagePlus": "~0.3.3"
+  }
+}

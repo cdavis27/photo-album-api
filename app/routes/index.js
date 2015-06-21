@@ -5,5 +5,8 @@ exports.index = function(req, res) {
 exports.dayAlbum = function(req, res) {
     var day = req.params.day;
 
-    res.render('album', {day: day});
+    
+    var photos = [];
+
+    res.render('album', {day: day, photos: photos});
 };
